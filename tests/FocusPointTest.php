@@ -12,7 +12,7 @@ class FocusPointTest extends SapphireTest
     /** @var DBFocusPoint */
     protected $focusPoint = null;
 
-    public function setUp()
+    public function setUp() : void
     {
         parent::setUp();
         $this->focusPoint = DBField::create_field(DBFocusPoint::class, [0.5, 0.25]);
